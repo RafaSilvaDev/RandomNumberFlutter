@@ -11,8 +11,8 @@ class home extends StatefulWidget {
 
 class _homeState extends State<home> {
   int userTry = 0;
-  Random random = new Random();
-  int randomNumber = random.nextInt(50);
+  var rng = Random();
+  var num = rng.nextInt(100);
 
   void entrou() {
     setState(() {
